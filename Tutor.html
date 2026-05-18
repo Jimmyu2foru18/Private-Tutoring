@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>James McGuigan Tutoring</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f9f9f9;
+		}
+		header {
+			text-align: center;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			margin-bottom: 20px;
+		}
+		h1 {
+			margin: 0 0 10px 0;
+			color: #2c3e50;
+		}
+		.credentials {
+			font-style: italic;
+			color: #666;
+		}
+		.section {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			margin-bottom: 20px;
+		}
+		.section-title {
+			color: #2c3e50;
+			border-bottom: 2px solid #3498db;
+			padding-bottom: 5px;
+			margin-top: 0;
+		}
+		.course-list {
+			list-style-type: none;
+			padding: 0;
+		}
+		.course-list li {
+			padding: 8px 0;
+			border-bottom: 1px solid #eee;
+			display: flex;
+		}
+		.course-code {
+			font-weight: bold;
+			width: 100px;
+			color: #3498db;
+		}
+		.course-name {
+			flex: 1;
+		}
+		.logistics {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+		.payment-section {
+			text-align: center;
+		}
+		.qr-code {
+			max-width: 200px;
+			height: auto;
+			margin: 10px 0;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+		label {
+			margin-top: 10px;
+			font-weight: bold;
+		}
+		input, select, textarea {
+			padding: 10px;
+			margin-top: 5px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: inherit;
+		}
+		button {
+			margin-top: 20px;
+			padding: 12px;
+			background-color: #3498db;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		button:hover {
+			background-color: #2980b9;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>James McGuigan Private Tutoring</h1>
+		<div class="credentials">B.S. Management Information Systems & Psychology</div>
+		<p>Professional instruction in Mathematics and Computer Science</p>
+	</header>
+
+	<div class="logistics">
+		<div class="section">
+			<h2 class="section-title">Tutoring Details</h2>
+			<p><strong>Rate:</strong> $40 to $50 per hour</p>
+			<p><strong>Format:</strong> In person or online via Zoom or Microsoft Teams</p>
+			<p><strong>Payment:</strong> Required prior to service via Venmo or Apple Pay</p>
+		</div>
+
+		<div class="section payment-section">
+			<h2 class="section-title">Payment</h2>
+			<p>Scan the Venmo code below to submit payment.</p>
+			<img src="MyVenmoQRCode.png" alt="Venmo QR Code for Jimmy McGuigan" class="qr-code">
+			<p>@Jimmy-McGuigan-1</p>
+		</div>
+	</div>
+
+	<div class="section">
+		<h2 class="section-title">Mathematics</h2>
+		<ul class="course-list">
+			<li><span class="course-code">MA2080</span><span class="course-name">Precalculus for Business and Economics</span></li>
+			<li><span class="course-code">MA2300</span><span class="course-name">Calculus for Business and Economics</span></li>
+			<li><span class="course-code">MA2000</span><span class="course-name">Applied Statistics</span></li>
+			<li><span class="course-code">MA3210</span><span class="course-name">Introduction to Probability and Statistics</span></li>
+			<li><span class="course-code">MA3160</span><span class="course-name">Linear Algebra</span></li>
+			<li><span class="course-code">MA2050</span><span class="course-name">History of Mathematics</span></li>
+		</ul>
+
+		<h2 class="section-title">Computer Science</h2>
+		<ul class="course-list">
+			<li><span class="course-code">CS2510</span><span class="course-name">Computer Programming I</span></li>
+			<li><span class="course-code">CS2511</span><span class="course-name">Computer Programming II</span></li>
+			<li><span class="course-code">CS3611</span><span class="course-name">Advanced C# Programming</span></li>
+			<li><span class="course-code">CS4100</span><span class="course-name">Technical Communications</span></li>
+			<li><span class="course-code">CS4501</span><span class="course-name">Software Engineering</span></li>
+			<li><span class="course-code">CS4550</span><span class="course-name">Database Management Systems</span></li>
+			<li><span class="course-code">CS5710</span><span class="course-name">Computer Networks</span></li>
+			<li><span class="course-code">CS5910</span><span class="course-name">System Design and Implementation</span></li>
+			<li><span class="course-code">CS4720</span><span class="course-name">Internet and Web Technologies</span></li>
+		</ul>
+	</div>
+
+	<div class="section">
+		<h2 class="section-title">Request a Session</h2>
+		<p>Fill out the form below to initiate an email request for a tutoring session.</p>
+		<form action="mailto:jimmymcguigan18@gmail.com" method="post" enctype="text/plain">
+			<label for="name">Your Name:</label>
+			<input type="text" id="name" name="Name" required>
+
+			<label for="email">Your Email:</label>
+			<input type="email" id="email" name="Email" required>
+
+			<label for="subject">Subject Needed:</label>
+			<input type="text" id="subject" name="Subject" placeholder="e.g. CS2510 or Applied Statistics" required>
+
+			<label for="format">Preferred Format:</label>
+			<select id="format" name="Format">
+				<option value="Online">Online via Zoom</option>
+				<option value="Online">Online via Teams</option>
+				<option value="In-person">In person</option>
+			</select>
+
+			<label for="message">Additional Details:</label>
+			<textarea id="message" name="Message" rows="4" placeholder="Briefly describe what you need help with."></textarea>
+
+			<button type="submit">Send Request</button>
+		</form>
+	</div>
+
+</body>
+</html>
