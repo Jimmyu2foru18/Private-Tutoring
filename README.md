@@ -1,2 +1,2 @@
 # Private-Tutoring
-A easy form for Booking with me PRivately
+A easy form for Booking with me Privately
